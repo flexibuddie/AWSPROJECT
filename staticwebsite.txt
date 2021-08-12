@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 S3 Bucket Policy
 {
 "Version":"2012-10-17",
@@ -10,4 +11,18 @@ S3 Bucket Policy
    "Resource":["arn:aws:s3:::your-website/*"]
  }
 ]
+=======
+S3 Bucket Policy
+{
+"Version":"2012-10-17",
+"Statement":[
+ {
+   "Sid":"AddPerm",
+   "Effect":"Allow",
+   "Principal": "*",
+   "Action":["s3:GetObject"],
+   "Resource":["arn:aws:s3:::your-website/*"]
+ }
+]
+>>>>>>> 943212ca6d4e72d31082859ab10df9e9f7208bd0
 }
