@@ -1,8 +1,11 @@
-Type: AWS::EC2::VPC
-Properties: 
-  CidrBlock: String
-  EnableDnsHostnames: Boolean
-  EnableDnsSupport: Boolean
-  InstanceTenancy: String
-  Tags: 
-    - Tag
+Description:>
+    Ben Uduka / Udacity
+    This template deploys a VPC
+Resources:   
+    VPC:
+        Type: AWS::EC2::VPC
+            Properties: 
+                CidrBlock: 10.0.0.0/16
+                EnableDnsHostnames: true
+                EnableDnsSupport: Boolean
+  
